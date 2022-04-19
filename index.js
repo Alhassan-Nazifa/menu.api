@@ -1,8 +1,9 @@
-const express = require("express")
-const morgan = require("morgan")
-require("dotenv").config()
-const connectDB = require("./config/connectDB")
-const FoodRoute =  require("./routes/foodRoute")
+const express = require("express");
+const morgan = require("morgan");
+require("dotenv").config();
+const connectDB = require("./config/connectDB");
+const FoodRoute =  require("./routes/foodRoute");
+const userRoute = require("./routes/userRoute");
 
 const app =  express();
 connectDB()
